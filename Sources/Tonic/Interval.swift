@@ -55,6 +55,9 @@ public enum Interval: Int, CaseIterable {
 
     /// Major Seventh
     case M7
+    
+    /// Perfect Octave
+    case P8
 
     /// Minor Ninth
     case m9
@@ -64,6 +67,12 @@ public enum Interval: Int, CaseIterable {
 
     /// Augmented Ninth
     case A9
+    
+    /// Minor Tenth
+    case m10
+    
+    /// Major Tenth
+    case M10
 
     /// Diminished Eleventh
     case d11
@@ -73,6 +82,24 @@ public enum Interval: Int, CaseIterable {
 
     /// Augmented Eleventh
     case A11
+    
+    /// Diminished Twelvth
+    case d12
+    
+    /// Perfect Twelvth
+    case P12
+    
+    /// Augmented Twelvth
+    case A12
+    
+    /// Minor Thirteenth
+    case m13
+    
+    /// Major Thirteenth
+    case M13
+    
+    /// Augmented Thirteenth
+    case A13
 
     /// Number of semitones the interval spans
     var semitones: Int {
@@ -93,12 +120,16 @@ public enum Interval: Int, CaseIterable {
         case .A6: return 10
         case .m7: return 10
         case .M7: return 11
+        case .P8: return 12
         case .m9: return 13
         case .M9: return 14
         case .A9: return 15
+        case .m10: return 15
+        case .M10: return 16
         case .d11: return 16
         case .P11: return 17
         case .A11: return 18
+            case .d12: return 18
         }
     }
 
